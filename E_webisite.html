@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockStar Mobiles - Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>RockStar Mobiles</h1>
+    </header>
+    <main>
+        <form id="product-form" action="#" method="POST" onsubmit="showSuccessMessage(event)">
+            <div class="product-grid">
+                <section class="product-info">
+                    <h1>iPhone 11</h1>
+                    <p class="product-description">Experience the next level of innovation with iPhone 11, featuring an ultra-wide camera, powerful A13 Bionic chip, and an all-day battery life.</p>
+                    <p class="product-price">$599.99</p>
+                    <img src="C:/Users/manne/Downloads/iphone11.jpg" alt="iPhone 11" class="product-image">
+                    <label>
+                        <input type="checkbox" name="products" value="iPhone 11 - $599.99"> Add to Cart
+                    </label>
+                </section>
+                
+                <section class="product-info">
+                    <h1>iPhone 12</h1>
+                    <p class="product-description">iPhone 12 introduces 5G technology, a new Ceramic Shield for better drop performance, and an improved dual-camera system for stunning photos and videos.</p>
+                    <p class="product-price">$799.99</p>
+                    <img src="C:/Users/manne/Downloads/iphone12.jpg" alt="iPhone 12" class="product-image">
+                    <label>
+                        <input type="checkbox" name="products" value="iPhone 12 - $799.99"> Add to Cart
+                    </label>
+                </section>
+            </div>
+            
+            <div class="product-grid">
+                <section class="product-info">
+                    <h1>iPhone 13</h1>
+                    <p class="product-description">The iPhone 13 offers a brighter Super Retina XDR display, the lightning-fast A15 Bionic chip, and advanced camera features like Photographic Styles and Cinematic mode.</p>
+                    <p class="product-price">$899.99</p>
+                    <img src="C:/Users/manne/Downloads/iphone13.jpg" alt="iPhone 13" class="product-image">
+                    <label>
+                        <input type="checkbox" name="products" value="iPhone 13 - $899.99"> Add to Cart
+                    </label>
+                </section>
+                
+                <section class="product-info">
+                    <h1>iPhone 14</h1>
+                    <p class="product-description">With iPhone 14, enjoy the next generation of camera technology, enhanced battery life, and the power of the A16 Bionic chip, providing unmatched performance and efficiency.</p>
+                    <p class="product-price">$999.99</p>
+                    <img src="C:/Users/manne/Downloads/iphone14.jpg" alt="iPhone 14" class="product-image">
+                    <label>
+                        <input type="checkbox" name="products" value="iPhone 14 - $999.99"> Add to Cart
+                    </label>
+                </section>
+            </div>
+            
+            <div class="product-grid">
+                <section class="product-info">
+                    <h1>iPhone 15</h1>
+                    <p class="product-description">The iPhone 15 sets a new standard with a revolutionary design, advanced AI capabilities, and the latest in mobile technology, ensuring you're always at the cutting edge.</p>
+                    <p class="product-price">$1099.99</p>
+                    <img src="C:/Users/manne/Downloads/iphone15.jpg" alt="iPhone 15" class="product-image">
+                    <label>
+                        <input type="checkbox" name="products" value="iPhone 15 - $1099.99"> Add to Cart
+                    </label>
+                </section>
+            </div>
+            <div class="cart-actions">
+                <button type="submit" class="cta-button">Proceed to Checkout</button>
+            </div>
+        </form>
+
+        <div id="success-message" class="success-message">
+            <p>auto payment successful </p>
+        </div>
+    </main>
+    <footer>
+        <p>Contact us at <a href="mailto:manne.phaneendra18@gmail.com">manne.phaneendra18@gmail.com</a></p>
+        <p>&copy; 2024 RockStar Mobiles. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSuccessMessage(event) {
+            event.preventDefault();
+            document.getElementById('product-form').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+

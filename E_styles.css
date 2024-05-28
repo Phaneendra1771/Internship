@@ -1,0 +1,141 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Background set to black */
+    color: #fff; /* Default font color set to white */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+main {
+    padding: 2em 1em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.product-info {
+    flex: 1;
+    text-align: center;
+    padding: 2em;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    color: #ddd; /* Changed to a lighter color for better readability */
+}
+
+.product-info h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #ffa500; /* Set to orange */
+}
+
+.product-info .product-description {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: #bbb; /* Lighter gray for descriptions */
+}
+
+.product-info .product-price {
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+    color: #4caf50; /* Set to green */
+    font-weight: bold;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures images cover the area uniformly */
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer a {
+    color: #ffa500; /* Set to orange */
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #4caf50; /* Set to green */
+}
+
+.success-message {
+    display: none; /* Hidden by default */
+    text-align: center;
+    padding: 2em;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    color: #4caf50; /* Set to green */
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+    }
+}
+
+
+
+   
+
+
+
+
+
